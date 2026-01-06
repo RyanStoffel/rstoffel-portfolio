@@ -151,6 +151,5 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
     </script>
-  <p style="text-align:center;color:#666;font-size:12px;margin-top:50px;">v1.0.1</p>
 </body>
 </html>
