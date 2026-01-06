@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Stoffel</title>
+    <link rel="preload" href="assets/profile.png" as="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link id="favicon" rel="icon" type="image/png" href="assets/favicon-light.png">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Hi, I'm Ryan Stoffel</h1>
+                    <p class="subtitle">Junior Computer Science Student @ CBU</p>
+                    <div class="links">
+                        <a href="https://github.com/RyanStoffel" target="_blank" class="link-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ryan-stoffel" target="_blank" class="link-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="mailto:ryanstoffel62@icloud.com" class="link-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="resume/ryanstoffel.pdf" target="_blank" class="link-item">
+                            <i class="fas fa-file-lines"></i>
+                            <span>Resume</span>
+                        </a>
+                    </div>
+                </div>
+                <img src="assets/profile.png" alt="Ryan Stoffel" class="hero-image" fetchpriority="high" decoding="async" width="200" height="200">
+            </div>
+        </header>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a Computer Science student who enjoys building creative applications that are both useful and impactful. At the CBU AI & Machine Learning Lab, I've worked on projects that connect data, automation, and real-world problems for partners like the Department of Defense. This has given me the chance to dive into Salesforce, Data Cloud, and Apex while learning how to turn ideas into working solutions.
+            </p>
+            <p>
+                Outside of work, I like exploring different ways to create with technology. I've built platformer games in Unity, experimented with web and app development, and customized my own development setups across Linux, macOS, and Windows. These projects let me mix personal problem-solving with creativity, and I enjoy figuring things out one step at a time.
+            </p>
+            <p>
+                Whether it's coding, designing, or experimenting with new tools, I'm motivated by curiosity and the process of making something better than it was before.
+            </p>
+        </section>
+
+        <section class="education">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Science in Computer Science</strong> - Concentration in AI / Machine Learning</p>
+            <p>California Baptist University, Expected Graduation: Apr. 2027</p>
+        </section>
+
+        <section class="experience">
+            <h2>Computer Science Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Software Engineering Research Assistant</h3>
+                        <p class="company">CAiMLL (California Baptist University Ai & Machine Learning Lab)</p>
+                    </div>
+                    <span class="date">May 2025 - Present</span>
+                </div>
+                <ul>
+                    <li>Designed and deployed advanced Salesforce solutions using Apex, Triggers, SOQL, Flows, Prompt Templates, and AI Agents through Agentforce, driving automation and data-driven decision making.</li>
+                    <li>Architected secure Salesforce environments that streamlined research workflows and accelerated innovation across multiple stakeholder groups.</li>
+                    <li>Led deployments across multiple Salesforce orgs using manifest-driven version control, Salesforce CLI, GitHub, and Jira—ensuring reliable releases and improving cross-org consistency.</li>
+                    <li>Contributed to a 10-person team, participating in weekly sprints and delivering high-impact projects such as a Meeting Report Generator leveraging AI and Apex to accelerate operational reporting.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+            
+            <div class="project-item">
+                <h3>DINA Matching Engine (DME)</h3>
+                <p class="project-subtitle">Developed while working @ CAiMLL (CBU AI and Machine Learning Lab)</p>
+                <ul>
+                    <li><strong>Version 1 (Salesforce-Native):</strong> Architected and developed an end-to-end Salesforce matching engine using Apex to recommend related objects via vector cosine similarity through Data Cloud's SQL Connect API namespace.</li>
+                    <li>Designed and implemented a smart caching system with batch processing and queueable architecture to persist recommendations in-org, reducing recommendation latency by 90%—from 45-60 seconds to ~3 seconds.</li>
+                    <li>Built a dynamic recommendation controller supporting bidirectional matching across multiple object types, with configurable processing flows and automated retry logic.</li>
+                    <li><strong>Version 2 (GCP Integration):</strong> Collaborated with a small team to migrate the matching engine to Google Cloud Platform, owning the Salesforce-to-GCP data integration pipeline.</li>
+                    <li>Developed Python scripts to extract Salesforce data via the Salesforce API, transform it into vector embeddings, and load it into PostgreSQL, establishing a robust ETL pipeline for recommendation generation.</li>
+                    <li>Built bidirectional sync tools to import GCP-generated recommendations back into Salesforce, mapping complex metadata including LLM token usage, similarity scores, and recommendation reports.</li>
+                    <li>Automated the data integration workflow to eliminate manual intervention, currently in production with plans for full automation.</li>
+                    <li>Both versions are deployed to production, actively used by leadership to accelerate data-driven decision-making and collaboration across research teams.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="additional-experience">
+            <h2>Additional Work Experience</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>Chick-Fil-A Trainer</h3>
+                        <p class="company">Chick-Fil-A, The Crossings</p>
+                    </div>
+                    <span class="date">Jun 2023 - Aug 2025</span>
+                </div>
+                <ul>
+                    <li>Mentored new team members in food safety, customer service, and operational procedures to support smooth onboarding and consistent performance.</li>
+                    <li>Worked across the dining room, front counter, and drive-thru, leading by example in a fast-paced, high-volume environment while maintaining efficiency and accuracy during peak hours.</li>
+                    <li>Collaborated with managers and teammates to improve workflows, streamline service, and uphold Chick-fil-A's standards of hospitality.</li>
+                    <li>Developed strong communication, problem-solving, and coaching skills through hands-on leadership and peer mentorship.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Programming Languages:</strong> Java, C++, C#, Python, Apex, SQL, SOQL, JavaScript, HTML, CSS</li>
+                <li><strong>Frameworks:</strong> React, Next.js</li>
+                <li><strong>Developer Tools:</strong> Git, VSCode, IntelliJ, Neovim</li>
+            </ul>
+        </section>
+    </div>
+
+    <button id="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAqx6Tb_kA_PTelg8WfaoQDeh9AB7HM_wQ",
+            authDomain: "rstoffel-portfolio.firebaseapp.com",
+            projectId: "rstoffel-portfolio",
+            storageBucket: "rstoffel-portfolio.firebasestorage.app",
+            messagingSenderId: "648734573531",
+            appId: "1:648734573531:web:05f6ea754f107411639dfe"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+    </script>
+</body>
+</html>
