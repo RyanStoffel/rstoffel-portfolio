@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan Stoffel - Portfolio</title>
-    <link rel="preload" href="assets/profile.png" as="image">
+    <link rel="preload" href="assets/profile.webp" as="image">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <link id="favicon" rel="icon" type="image/png" href="assets/favicon-light.png">
+    <link id="favicon" rel="icon" type="image/webp" href="assets/favicon-light.webp">
 </head>
 <body>
     <div class="container">
@@ -35,7 +35,11 @@
                         </a>
                     </div>
                 </div>
-                <img src="assets/profile.png" alt="Ryan Stoffel" class="hero-image" fetchpriority="high" decoding="async" width="200" height="200">
+                <picture>
+                    <source srcset="assets/profile.webp" type="image/webp">
+                    <source srcset="assets/profile-optimized.jpg" type="image/jpeg">
+                    <img src="assets/profile-optimized.jpg" alt="Ryan Stoffel" loading="eager" width="800" height="800">
+                </picture>
             </div>
         </header>
 
@@ -133,12 +137,8 @@
 
     <script src="script.js"></script>
     <script type="module">
-        // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
 
-        // Your web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyAqx6Tb_kA_PTelg8WfaoQDeh9AB7HM_wQ",
             authDomain: "rstoffel-portfolio.firebaseapp.com",
@@ -148,9 +148,8 @@
             appId: "1:648734573531:web:05f6ea754f107411639dfe"
         };
 
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
     </script>
-  <p style="text-align:center;color:#666;font-size:12px;margin-top:50px;">v1.0.1</p>
+    <p style="text-align:center;color:#666;font-size:12px;margin-top:50px;">v1.0.2</p>
 </body>
 </html>
