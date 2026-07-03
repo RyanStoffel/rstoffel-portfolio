@@ -15,7 +15,7 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hi, I'm Ryan Stoffel</h1>
-                    <p class="subtitle">Junior Computer Science Student @ CBU</p>
+                    <p class="subtitle">Senior Computer Science Student @ CBU</p>
                     <div class="links">
                         <a href="https://github.com/RyanStoffel" target="_blank" class="link-item">
                             <i class="fab fa-github"></i>
@@ -29,7 +29,7 @@
                             <i class="fas fa-envelope"></i>
                             <span>Email</span>
                         </a>
-                        <a href="resume/ryanstoffel.pdf" target="_blank" class="link-item">
+                        <a href="resume/resume.pdf" target="_blank" class="link-item">
                             <i class="fas fa-file-lines"></i>
                             <span>Resume</span>
                         </a>
@@ -42,7 +42,7 @@
         <section class="about">
             <h2>About Me</h2>
             <p>
-                I'm a Computer Science student who enjoys building creative applications that are both useful and impactful. At the CBU AI & Machine Learning Lab, I've worked on projects that connect data, automation, and real-world problems for partners like the Department of Defense. This has given me the chance to dive into Salesforce, Data Cloud, and Apex while learning how to turn ideas into working solutions.
+                I'm a Computer Science student who enjoys building creative applications that are both useful and impactful. Currently as a NREIP Intern at NSWC Corona, I am working on projects that strengthen my skills in virtual machines, NixOS, C#, and the .NET 9 Framework. Previously at the CBU AI & Machine Learning Lab, I've worked on projects that connect data, automation, and real-world problems for partners like the Department of Defense. This has given me the chance to dive into Salesforce, Data Cloud, and Apex while learning how to turn ideas into working solutions.
             </p>
             <p>
                 Outside of work, I like exploring different ways to create with technology. I've built platformer games in Unity, experimented with web and app development, and customized my own development setups across Linux, macOS, and Windows. These projects let me mix personal problem-solving with creativity, and I enjoy figuring things out one step at a time.
@@ -67,13 +67,30 @@
                         <h3>Software Engineering Research Assistant</h3>
                         <p class="company">CAiMLL (California Baptist University Ai & Machine Learning Lab)</p>
                     </div>
-                    <span class="date">May 2025 - Present</span>
+                    <span class="date">May 2025 - Apr 2026</span>
                 </div>
                 <ul>
                     <li>Designed and deployed advanced Salesforce solutions using Apex, Triggers, SOQL, Flows, Prompt Templates, and AI Agents through Agentforce, driving automation and data-driven decision making.</li>
                     <li>Architected secure Salesforce environments that streamlined research workflows and accelerated innovation across multiple stakeholder groups.</li>
                     <li>Led deployments across multiple Salesforce orgs using manifest-driven version control, Salesforce CLI, GitHub, and Jira—ensuring reliable releases and improving cross-org consistency.</li>
                     <li>Contributed to a 10-person team, participating in weekly sprints and delivering high-impact projects such as a Meeting Report Generator leveraging AI and Apex to accelerate operational reporting.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>NREIP Intern</h3>
+                        <p class="company">NSWC (Naval Surface Warfare Center) Corona</p>
+                    </div>
+                    <span class="date">June 2026 - Present</span>
+                </div>
+                <ul>
+                    <li>Integrating an autonomous AI agent framework into a mission-scoring system, building a fleet-deployable NixOS VM appliance running the agent in Docker with PostgreSQL memory persistence.</li>
+                    <li>Developing a WPF C# console integration on the .NET framework against the agent's WebSocket and webhook APIs, handling session management, approval-request workflows, and real-time frame processing.</li>
+                    <li>Building a FastAPI developer dashboard for browsing agent memory, reviewing conversation history, editing agent skills, and managing Docker containers.</li>
+                    <li>Managing local LLM inference infrastructure across multiple GPU setups, configuring llama.cpp servers with KV quantization, flash attention, and parallel slots shared across the team.</li>
+                    <li>Contributing to a collaborative git workflow with teammates on a shared NixOS VM, troubleshooting Hyper-V dual-NIC networking, port-proxy forwarding, and firewall configuration.</li>
                 </ul>
             </div>
         </section>
@@ -133,12 +150,8 @@
 
     <script src="script.js"></script>
     <script type="module">
-        // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/12.3.0/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
 
-        // Your web app's Firebase configuration
         const firebaseConfig = {
             apiKey: "AIzaSyAqx6Tb_kA_PTelg8WfaoQDeh9AB7HM_wQ",
             authDomain: "rstoffel-portfolio.firebaseapp.com",
@@ -148,7 +161,6 @@
             appId: "1:648734573531:web:05f6ea754f107411639dfe"
         };
 
-        // Initialize Firebase
         const app = initializeApp(firebaseConfig);
     </script>
 </body>
